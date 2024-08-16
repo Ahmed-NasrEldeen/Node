@@ -13,7 +13,7 @@ app.use("*", (req, res) => {
   res.send(`
         <div style="text-align:center;">
             <img width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo39HTqrjJ4NY_NWYz3nF-6AfzCEjG8QAbbHEqEnECRAgpzsl4sIb8Fne8i7QZQQOWj3I&usqp=CAU">
-            <div style="font-size:24px; color:red;">Hell</div>
+            <div style="font-size:24px; color:red;">Hello</div>
         </div>
     `);
 });
