@@ -12,7 +12,7 @@ app.post("/websocket", (req, res) => {
   const connectionId = req.headers;
   console.log("the body", req.body, connectionId);
   res.send({
-    content: req.body,
+    timestamp: Date.now(),
   });
 });
 
