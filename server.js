@@ -9,7 +9,8 @@ app.get("/health", (req, res) => {
   });
 });
 app.post("/websocket", (req, res) => {
-  console.log("the body", req.body);
+  const connectionId = req.headers["x-amzn-apigateway-connection-id"];
+  console.log("the body", req.body, connectionId);
   res.send({
     content: req.body,
   });
