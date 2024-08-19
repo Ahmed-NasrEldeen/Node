@@ -9,7 +9,7 @@ app.get("/health", (req, res) => {
   });
 });
 app.post("/websocket", (req, res) => {
-  console.log(req);
+  console.log("the body", req.body);
   res.send({
     content: req.body,
   });
