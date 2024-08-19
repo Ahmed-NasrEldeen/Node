@@ -8,6 +8,11 @@ app.get("/health", (req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
+app.post("/websocket", (req, res) => {
+  res.send({
+    content: res.body,
+  });
+});
 
 app.use("*", (req, res) => {
   res.send(`
